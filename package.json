@@ -1,0 +1,41 @@
+{
+  "name": "@chatbot-ui/supabase",
+  "version": "1.0.4",
+  "description": "Supabase extension for the Chatbot UI project",
+  "homepage": "https://github.com/jorge-menjivar/chatbot-ui-supabase#readme",
+  "repository": "https://github.com/jorge-menjivar/chatbot-ui-supabase.git",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "react",
+    "nodejs",
+    "nextjs",
+    "database",
+    "chatbot",
+    "chatbot-ui"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "dev": "tsc -w --project tsconfig.json",
+    "clean": "rm -rf helpers components types 'client-session.d.ts' 'client-session.js' 'index.d.ts' 'index.js' 'middleware.d.ts' 'middleware.js' 'server-session.d.ts' 'server-session.js'"
+  },
+  "author": "Jorge Menjivar <jorgemenjivar1997@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "next": "^13.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@chatbot-ui/core": "^1.0.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/node": "^20.1.1",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.6.1",
+    "@supabase/auth-helpers-react": "^0.3.1",
+    "@supabase/supabase-js": "^2.21.0"
+  }
+}
